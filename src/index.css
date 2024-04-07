@@ -4,4 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+   html {
+      @apply font-poppins;
+   }
+}
 
+@layer components {
+   .hover-button {
+      @apply hover:pb-2 hover:border-secondary hover:border-b-2 hover:text-secondary transition-all text-primary;
+   }
+   .hover-links-accounts {
+      @apply hover:scale-150 transition-all;
+   }
+}

@@ -2,11 +2,11 @@ import myProfile from "../assets/images/myProfile.png";
 import MyAccounts from "../components/MyAccounts";
 // import backGround from "../assets/images/background.png";
 
-const HomePage = () => {
+const HomePage = ({ homeRef }) => {
     
     return (
-        <section className="font-poppins flex items-center justify-center bg-[url('background.png')] bg-contain bg-no-repeat">
-            <div className="px-[5rem] mt-[5rem] z-50">
+        <section ref={homeRef} className="font-poppins flex items-center justify-center bg-no-repeat">
+            <div className="px-[5rem] mt-[3rem] z-50">
                 <div className="flex items-center justify-evenly p-3 gap-2">
                     <div className="basis-[50%]">
                         <p className="mb-3 text-xl">Hi I'm Marc </p>

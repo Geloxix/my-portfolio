@@ -1,6 +1,6 @@
-const AboutPage = () => {
+const AboutPage = ({ aboutRef }) => {
     return (
-        <section>
+        <section ref={aboutRef} className="h-lvh">
             <div className="px-[5rem] mt-[5rem] border-2 border-green-400">
                 <div>
                     <div className="p-3">

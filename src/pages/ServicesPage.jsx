@@ -1,6 +1,8 @@
-const ServicesPage = () => {
+const ServicesPage = ({ servicesRef }) => {
     return (
-        <div>ServicesPage</div>
+        <section ref={servicesRef}>
+            ServicesPage
+        </section>
     );
 }
 

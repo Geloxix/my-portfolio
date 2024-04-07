@@ -1,32 +1,28 @@
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const MyAccounts = () => {
     return (
-        <div className="flex gap-4">
-            <Link to="https://www.instagram.com/nnnngelo/">
+        <div className="flex gap-[1rem]">
+            <a href="https://www.instagram.com/nnnngelo/">
                 { <FaInstagram 
-                    className="text-secondary text-[26px]"
+                    className="text-secondary text-[26px] hover-links-accounts"
                 />}
-            </Link>
-
-            <Link to="https://www.facebook.com/cramolegna.onajeta/">
+            </a>
+            <a href="https://www.facebook.com/cramolegna.onajeta/">
                 { <FaFacebook 
-                    className="text-secondary text-[26px]"
+                    className="text-secondary text-[26px] hover-links-accounts"
                 /> }
-            </Link>
-
-            <Link to="https://www.linkedin.com/in/marcangelo-gilig-509398286/">
+            </a>
+            <a href="https://www.linkedin.com/in/marcangelo-gilig-509398286/">
                 { <FaLinkedin 
-                    className="text-secondary text-[26px]"
+                    className="text-secondary text-[26px] hover-links-accounts"
                 /> }
-            </Link>
-
-            <Link to="https://twitter.com/itsgelo2222">
+            </a>
+            <a href="https://twitter.com/itsgelo2222">
                 { < FaTwitter 
-                    className="text-secondary text-[26px]"
+                    className="text-secondary text-[26px] hover-links-accounts"
                 /> }
-            </Link>
+            </a>
         </div>
     );
 }

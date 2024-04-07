@@ -1,13 +1,13 @@
-import { Outlet } from "react-router-dom";
-import Nav from "../components/Nav";
+// import { Outlet } from "react-router-dom";
+// import Nav from "../components/Nav";
 
-const MainLayout = () => {
-    return (
-        <>
-            <Nav />
-            <Outlet />
-        </>
-    )
-}
+// const MainLayout = () => {
+//     return (
+//         <>
+//             <Nav />
+//             <Outlet />
+//         </>
+//     )
+// }
 
-export default MainLayout;
+// export default MainLayout;
