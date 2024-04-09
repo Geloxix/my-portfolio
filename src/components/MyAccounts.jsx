@@ -2,7 +2,7 @@ import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const MyAccounts = () => {
     return (
-        <div className="flex gap-[1rem]">
+        <div className="flex gap-[1rem] justify-center md:justify-start">
             <a href="https://www.instagram.com/nnnngelo/">
                 { <FaInstagram 
                     className="text-secondary text-[26px] hover-links-accounts"

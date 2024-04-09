@@ -22,6 +22,7 @@ const App = () => {
    const handleSmoothScroll = (page) => {
       page.current.scrollIntoView({
          behavior: 'smooth',
+         inline: 'center',
       });
    };
 

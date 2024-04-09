@@ -28,6 +28,9 @@ export default {
       transitionTimingFunction: {
         'linear': 'linear',
       },
+      backgroundImage: {
+        'hero-bg': "url('../assets/images/hero-blob.png')"
+      },
     },
   },
   plugins: [],
