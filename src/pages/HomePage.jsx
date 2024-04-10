@@ -1,48 +1,46 @@
 import myProfile from "../assets/images/myProfile.png";
 import MyAccounts from "../components/MyAccounts";
 import { TypeAnimation } from "react-type-animation";
+
 // import backGround from "../assets/images/background.png";
 
 const HomePage = ({ homeRef }) => {
     
     return (
-        <section ref={homeRef} className="font-poppins h-lvh flex items-center justify-center bg-no-repeat">
-            <div className="px-[5rem] mt-[4rem] z-50">
-                <div className="flex items-center justify-evenly p-3 gap-2 md:flex-row flex-col-reverse">
-                    <div className="min-w-[50%] basis-[50%]">
-                        <p className="mb-3 md:text-left text-center text-zinc-500 text-xl">Hi I'm Marc </p>
-                        <h1 className="text-6xl font-bold mb-2 text-secondary text-center md:text-left">
-                            <span>
-                                <p className="mb-4">
-                                    I'm a
-                                </p>
-                            </span>
-                            <TypeAnimation 
-                                sequence={[
-                                    "Frontend Dev",
-                                    1000,
-                                    "Web Designer",
-                                    1000,
-                                ]}
-                                wrapper="span"
-                                speed={50}
-                                repeat={Infinity}
-                            />
-                        </h1>
-                        <p className="text-[14px] mb-8 md:text-left text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident eaque quisquam ipsum dolor illum! Harum, asperiores.</p>
-                        <div className="mb-3">
-                            <MyAccounts />
-                        </div>
-                    </div>
-                    
-                    <div className="bg-hero-bg bg-contain ">   
-                        <img 
-                            src={myProfile} 
-                            alt="my picture" 
-                            className="md:w-[450px] w-[300px] mb-4"
+        <section ref={homeRef} className="font-poppins flex items-center justify-center min-h-screen border-2 border-black">
+            <div className="flex items-center px-[4rem] justify-center p-2 sm:p-3 gap-2 md:flex-row flex-col-reverse border-2 border-green-400">
+                <div className="min-w-[50%] basis-[50%]">
+                    <p className="mb-3 md:text-left text-[13px] md:text-[14px] text-center text-zinc-500">Hi I'm Marc </p>
+                    <h1 className="text-5xl md:text-6xl font-bold mb-2 text-secondary text-center md:text-left">
+                        <span>
+                            I'm a
+                        </span><br />
+                        <TypeAnimation 
+                            sequence={[
+                                "Frontend Dev",
+                                1000,
+                                "Web Designer",
+                                1000,
+                            ]}
+                            wrapper="span"
+                            speed={50}
+                            repeat={Infinity}
+                            
                         />
-                    </div> 
+                    </h1>
+                    <p className="text-[12px] sm:text-[13px] md:text-[14px] xl:text-[1em] mb-8 md:text-left text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident eaque quisquam ipsum dolor illum! Harum, asperiores.</p>
+                    <div className="mb-3">
+                        <MyAccounts />
+                    </div>
                 </div>
+                
+                <div className="bg-hero-bg bg-contain ">   
+                    <img 
+                        src={myProfile} 
+                        alt="my picture" 
+                        className="lg:w-[450px] md:w-[400px] w-[300px] mb-4"
+                    />
+                </div> 
             </div>
         </section>
     );
