@@ -7,11 +7,11 @@ import { TypeAnimation } from "react-type-animation";
 const HomePage = ({ homeRef }) => {
     
     return (
-        <section ref={homeRef} className="font-poppins flex items-center justify-center min-h-screen border-2 border-black">
-            <div className="flex items-center px-[4rem] justify-center p-2 sm:p-3 gap-2 md:flex-row flex-col-reverse border-2 border-green-400">
-                <div className="min-w-[50%] basis-[50%]">
-                    <p className="mb-3 md:text-left text-[13px] md:text-[14px] text-center text-zinc-500">Hi I'm Marc </p>
-                    <h1 className="text-5xl md:text-6xl font-bold mb-2 text-secondary text-center md:text-left">
+        <section ref={homeRef} className="font-poppins flex items-center justify-center min-h-screen">
+            <div className="flex items-center px-[2rem] md:px-[4rem] justify-center p-2 sm:p-3 gap-2 md:flex-row flex-col-reverse">
+                <div className="min-w-[50%] basis-[50%] relative">
+                    <p className="mb-3 md:text-left text-[13px] md:text-[14px] text-center ">Hi I'm Marc </p>
+                    <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-2 text-secondary text-center md:text-left">
                         <span>
                             I'm a
                         </span><br />
@@ -25,10 +25,9 @@ const HomePage = ({ homeRef }) => {
                             wrapper="span"
                             speed={50}
                             repeat={Infinity}
-                            
                         />
                     </h1>
-                    <p className="text-[12px] sm:text-[13px] md:text-[14px] xl:text-[1em] mb-8 md:text-left text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident eaque quisquam ipsum dolor illum! Harum, asperiores.</p>
+                    <p className="text-[12px] sm:text-[13px] md:text-[14px] xl:text-[1em] mb-8 md:text-left text-center leading-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident eaque quisquam ipsum dolor illum! Harum, asperiores.</p>
                     <div className="mb-3">
                         <MyAccounts />
                     </div>

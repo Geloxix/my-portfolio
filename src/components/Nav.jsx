@@ -34,8 +34,8 @@ const Nav = ({ handleSmoothScroll, homeRef, aboutRef, skillsRef, servicesRef, co
    },[]);
 
    return (
-      <nav className={`fixed w-full top-0 left-0 z-[999] transition-all ${isSticky ? 'bg-gray-50' : 'bg-transparent'}`}>
-         <div className="flex items-center justify-between h-[4rem] w-full md:px-[9rem] px-[4rem] font-poppins text-primary relative">
+      <nav className={`fixed w-full top-0 left-0 z-[999] transition-all ${isSticky ? 'bg-white/50' : 'bg-transparent'}`}>
+         <div className="flex items-center justify-between h-[4rem] w-full md:px-[9rem] px-[3rem] font-poppins text-primary relative">
                <div>
                   <img 
                      src={Logo}
