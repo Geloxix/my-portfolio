@@ -31,7 +31,7 @@ const mySkills = [
         logo: ReactJs,
     },
     { 
-        name: 'Tailwind CSS', 
+        name: 'Tailwind CSS2', 
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, corrupti voluptas eaque in cumque dignissimos quam! Sapiente veritatis nam aut, iste ipsa deserunt? Sed,',
         logo: TailwindLogo,
     },
@@ -50,13 +50,13 @@ const SkillsPage = ({ skillsRef }) => {
                     </span>
                 </h1>
                 <p className='text-center'>My knowledge</p>
-                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2rem] p-[2rem] px-[5rem] my-[2rem] border-2'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2rem] p-[2rem] px-[2rem] md:px-[6rem]'>
                     {
                         mySkills.map((skill) =>(
-                            <li key={skill.name} className='shadow-md flex items-center justify-center flex-col gap-3 rounded-md text-center text-[1em] p-[1rem] cursor-pointer hover:scale-105 transition-all'>
+                            <li key={skill.name} className='shadow-md flex items-center justify-center flex-col gap-3 rounded-lg text-center text-[1em] p-[1rem] cursor-pointer hover:scale-105 transition-all bg-white'>
                                 <img src={skill.logo} alt="Skill logo" width={50}/>
-                                <h3 className='text-secondary text-xl font-semibold'>{ skill.name }</h3>
-                                <p className='text-zinc-500 leading-7'>{ skill.description }</p>
+                                <h3 className='text-secondary text-xl font-semibold font-palanquin'>{ skill.name }</h3>
+                                <p className='text-zinc-500 md:leading-7 leading-6 text-[0.90em]'>{ skill.description }</p>
                             </li>
                         ))
                     }
@@ -65,5 +65,6 @@ const SkillsPage = ({ skillsRef }) => {
         </section>
     );
 }
+
 
 export default SkillsPage;

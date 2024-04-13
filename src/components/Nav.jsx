@@ -35,12 +35,12 @@ const Nav = ({ handleSmoothScroll, homeRef, aboutRef, skillsRef, servicesRef, co
 
    return (
       <nav className={`fixed w-full top-0 left-0 z-[999] transition-all ${isSticky ? 'bg-white/50' : 'bg-transparent'}`}>
-         <div className="flex items-center justify-between h-[4rem] w-full md:px-[9rem] px-[3rem] font-poppins text-primary relative">
+         <div className="flex items-center justify-between h-[4rem] w-full md:px-[9rem] sm:px-[5rem] px-[3rem] font-poppins text-primary relative">
                <div>
                   <img 
                      src={Logo}
                      alt="logo name" 
-                     width={60}
+                     className="sm:w-16 w-14"
                   />
                </div>
 
