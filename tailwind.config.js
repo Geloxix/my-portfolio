@@ -29,7 +29,7 @@ export default {
         'linear': 'linear',
       },
       backgroundImage: {
-        'hero-bg': "url('../assets/images/hero-blob.png')"
+        'contact-bg': "url('./assets/images/background.svg')",
       },
     },
   },

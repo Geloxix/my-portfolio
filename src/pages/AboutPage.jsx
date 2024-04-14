@@ -1,9 +1,10 @@
 import Me from "../assets/images/me.png";
 import { ArrowRight } from "lucide-react";
 
+
 const AboutPage = ({ aboutRef }) => {
     return (
-        <section ref={aboutRef} className="py-10">
+        <section ref={aboutRef} className="py-12">
             <div className="text-center mt-[2rem]">
                 <h1 className="text-4xl text-center font-semibold ">About <span className="text-secondary">Me</span></h1>
                 <p className="text-center">My Introduction</p>
@@ -12,7 +13,7 @@ const AboutPage = ({ aboutRef }) => {
                         <img 
                             src={Me} 
                             alt="About me profile" 
-                            className="w-[400px] md:w-[500px]"
+                            className="w-[400px] md:w-[450px]"
                         />
                     </div>
 

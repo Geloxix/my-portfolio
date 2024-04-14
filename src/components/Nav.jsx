@@ -28,7 +28,7 @@ const Nav = ({ handleSmoothScroll, homeRef, aboutRef, skillsRef, servicesRef, co
 
    useEffect(() => {
       window.addEventListener('scroll', () => {
-         const nav = document.querySelector('nav');
+         // const nav = document.querySelector('nav');
          window.scrollY > 0 ? setIsSticky(true) : setIsSticky(false);
       });
    },[]);

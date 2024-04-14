@@ -1,7 +1,6 @@
 // import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import { useRef } from "react";
 
-
 //import pages
 import Nav from "./components/Nav";
 import HomePage from "./pages/HomePage";
@@ -9,6 +8,7 @@ import AboutPage from "./pages/AboutPage";
 import SkillsPage from "./pages/SkillsPage";
 import ServicesPage from "./pages/ServicesPage";
 import ContactPage from "./pages/ContactPage";
+import Footer from "./components/Footer";
 // import NotFoundPage from "./pages/NotFoundPage";
 
 
@@ -51,6 +51,7 @@ const App = () => {
          <ContactPage 
             contactRef={contactRef}
          />
+         <Footer />
       </>
    );
 }
